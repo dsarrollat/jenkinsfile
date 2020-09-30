@@ -26,5 +26,10 @@ pipeline{
                 build job:'deploy-PRE'   
             }
         }
+        stage('deploy-to-PRO'){
+            steps{
+                build job:'deploy-PRO'   
+            }
+        }
     }
 }
